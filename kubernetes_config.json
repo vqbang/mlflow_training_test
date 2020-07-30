@@ -1,6 +1,0 @@
-{
-    "kube-context": "k8s-ai-prod",
-    "kube-job-template-path": "docker/kubernetes_job_template.yaml",
-    "repository-uri": "bangvo/mlflow"
-    
-}
