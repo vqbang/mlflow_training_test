@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "tiki-dwh",
+  "private_key_id": "2ab5475a7f2f463bc22af332b45899cd2094dbc4",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCs9dSNH0N00Ado\nYaskkJxJgAGh59lqPMWkYbPAkiiWdcUyOrB5rdjGgBf+JinPHxvDYvxRrPprD0i7\neAHGwa8mBcybxuUaP1S59GkM5kN0IE+jQxa6IOaxJrqCRqM96rSRwFAUp2bNo12T\nidNhOcGc0HojZa7QOEPtbQlctZ7zV83D+CtheaL9iSybaVB7MLlv85QfGLIhvNk1\naBx/xwJFZSMH07fra3Qp9O8FNHCenYUgSEcP0qbyhIaOKUwXxBggO8en27moQj4L\nGgNy753Cxy+n5h15GHa2y4xOAenvXSqw8z4+kbmMyYjV+0KneQw9mYQVauaiPQc2\nookd1Ro7AgMBAAECggEAVT8QlMGc8Lz7ebHxtSLlNMC3jUIFgXwUeZGCE961zHqd\nR8VvZ3mMx0EpEiVjI+eUOnfWHrdf8VZmJaffUEPz/IyNLRYZoxclvkU9ZZM0Gc83\nESOm1vQSX6vT7xO7r2+3scKUdamQXLgxDd+3ZEsgJxcFq96ZC50/tYyxOZV2kz6a\nt0Z58wSNBxVKVq2jvZyot0sb1+sVUHaVje4xn+1oDWnA9E5hZGtNFZAAIY/0sd7C\ny8Mc18D27nqs0qEX4WDwXXC4Tx7ImkD5lvmU1XzOEbc/tHNvqW9WSVl/EhHwU6nd\nM5rA1I359vQ6S/3WvLvcSNOjeSWYWiJJ8Kt0VYcAaQKBgQDeiOo3h2WIZILoP67m\nQOhq0WvzjNLIMGhkH0+QyGzHLNJzvUY4OJqvOudUB7TtHAyu57ddaDlmoXJ4SeWJ\nAKDBTlZCVU/PRRDyj/wqKcN9ZZks7f7FaMVCesyNJSkDRxKwECpNJaXZKcar4/1N\n0vvUATzTebCsKxYXRfWc2hfYBwKBgQDG+GhpcBhuSx1h2WLqJn9Sr3W/D3TIeiPN\niccbe6JKCXHg3Uw4Ih1zsvIjZAVjbd5p7Gc4VOn3bkNZgivKnaZ1t95jzpZIxXi0\nU73Za4YtzSnxCfkw8+N1Fz9bIUM1uY8ZQJQHLNr9vkFghZo7iU++SAt3rG8LKRrn\n5WkIkQiXLQKBgCIQc0nsv+4Q9Lj4hp1Ycjtns06kz981CcXJxTQ0efJDOjPdVVJl\n18fbDG4gf+GL2aUsczUpLyA2tn8TUL+YCQOOKkYdKQphWCbJQ6BwpCwd0US/abBu\nSUPT6FvyxERsLMAmuVL14F1Nt8u4Kp4vHb1mMxlsF09DiS4m12IbQGshAoGAJBtu\nLzwlYtaExX4CokVMM8AdmQeABOWNW75WAJnGELN4E/t02nbua1Gc+WksRSfqBcTd\n0m4uazV6SWMC+Wj0jUZJuEkEIr6bMfZEbJFDr0odA13w9746l8QZPjtiC/zZiBad\nBlRQhV2iVZbJL2ayrvA6DIShPiA+fri1/9T5/x0CgYBMpHReRi0dfLxBKQ3125g/\ngqVtJ1uZpCGrbA3LvBehBdaJmVazfg+3DFyZsLoifTAJ2+7xO5wGKxgoqoXmGd7o\ntT3YkRUWv+2FBpB5Fx6DU62XLu5jdMtGG50YMyO9Dp1H1yhRKNbyi1F6FD5gFqX4\ncv3lDMi7xeJ81DzaJiQ/hA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "marketplace-query-user@tiki-dwh.iam.gserviceaccount.com",
+  "client_id": "117912848142876801439",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/marketplace-query-user%40tiki-dwh.iam.gserviceaccount.com"
+}
