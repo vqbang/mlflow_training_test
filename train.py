@@ -19,15 +19,17 @@ import mlflow.sklearn
 import logging
 import os
 
+logging.basicConfig(format='%(asctime)s - %(message)s', level=logging.INFO)
+
 files = [f for f in os.listdir('.') if os.path.isfile(f)]
-print(files)
+logging.info(files)
 
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'key.json'
 with open('key.json', 'r') as f:
     data = f.readlines()
-    print(data)
+    logging.info(data)
     
-print(os.environ['GOOGLE_APPLICATION_CREDENTIALS'])
+
 
 def reset_mlflow_env():
     env_vars = ['MLFLOW_RUN_ID', 'MLFLOW_EXPERIMENT_ID']
@@ -37,11 +39,11 @@ def reset_mlflow_env():
 
 reset_mlflow_env()
 
-logging.basicConfig(format='%(asctime)s - %(message)s', level=logging.INFO)
+
 
 os.environ["MLFLOW_TRACKING_URI"]="http://mlflow-tracking.tiki.services"
 logging.info(os.environ["MLFLOW_TRACKING_URI"])
-
+logging.info(os.environ['GOOGLE_APPLICATION_CREDENTIALS'])
 
 #mlflow.set_tracking_uri(os.environ["MLFLOW_TRACKING_URI"])
 
