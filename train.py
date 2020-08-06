@@ -20,6 +20,7 @@ import logging
 import os
 
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = '/home/jenkins/mlflow_training_test/key.json'
+print(os.environ['GOOGLE_APPLICATION_CREDENTIALS'])
 
 def reset_mlflow_env():
     env_vars = ['MLFLOW_RUN_ID', 'MLFLOW_EXPERIMENT_ID']
