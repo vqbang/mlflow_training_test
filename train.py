@@ -25,11 +25,7 @@ files = [f for f in os.listdir('.') if os.path.isfile(f)]
 logging.info(files)
 
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'key.json'
-with open('key.json', 'r') as f:
-    data = f.readlines()
-    logging.info(data)
     
-
 
 def reset_mlflow_env():
     env_vars = ['MLFLOW_RUN_ID', 'MLFLOW_EXPERIMENT_ID']
@@ -38,8 +34,6 @@ def reset_mlflow_env():
             del os.environ[e]
 
 reset_mlflow_env()
-
-
 
 os.environ["MLFLOW_TRACKING_URI"]="http://mlflow-tracking.tiki.services"
 logging.info(os.environ["MLFLOW_TRACKING_URI"])
@@ -100,4 +94,4 @@ if __name__ == "__main__":
         mlflow.log_metric("r2", r2)
         mlflow.log_metric("mae", mae)
 
-        #mlflow.sklearn.log_model(lr, "model")
+        mlflow.sklearn.log_model(lr, "model")
