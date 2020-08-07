@@ -24,7 +24,7 @@ logging.basicConfig(format='%(asctime)s - %(message)s', level=logging.INFO)
 files = [f for f in os.listdir('.') if os.path.isfile(f)]
 logging.info(files)
 
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = '~/key.json'
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = './key.json'
 with open('key.json', 'r') as f:
     data = f.readlines()
     logging.info(data)
