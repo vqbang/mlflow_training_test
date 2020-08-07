@@ -24,10 +24,7 @@ logging.basicConfig(format='%(asctime)s - %(message)s', level=logging.INFO)
 files = [f for f in os.listdir('.') if os.path.isfile(f)]
 logging.info(files)
 
-from google.cloud import storage
-client = storage.Client()
-
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = './key.json'
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'key.json'
 with open('key.json', 'r') as f:
     data = f.readlines()
     logging.info(data)
@@ -103,4 +100,4 @@ if __name__ == "__main__":
         mlflow.log_metric("r2", r2)
         mlflow.log_metric("mae", mae)
 
-        mlflow.sklearn.log_model(lr, "model")
+        #mlflow.sklearn.log_model(lr, "model")
