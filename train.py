@@ -17,7 +17,7 @@ import mlflow
 import mlflow.sklearn
 
 import logging
-import os
+from config import *
 
 logging.basicConfig(format='%(asctime)s - %(message)s', level=logging.INFO)
 
@@ -36,7 +36,6 @@ def reset_mlflow_env():
 reset_mlflow_env()
 
 os.environ["MLFLOW_TRACKING_URI"]="http://mlflow-tracking.tiki.services"
-logging.info(os.environ["MLFLOW_TRACKING_URI"])
 logging.info(os.environ['GOOGLE_APPLICATION_CREDENTIALS'])
 
 #mlflow.set_tracking_uri(os.environ["MLFLOW_TRACKING_URI"])
