@@ -24,8 +24,10 @@ logging.basicConfig(format='%(asctime)s - %(message)s', level=logging.INFO)
 files = [f for f in os.listdir('.') if os.path.isfile(f)]
 logging.info(files)
 
-if sys.version_info[0] < 3:
-    raise Exception("Must be using Python 3")
+import platform
+
+print(platform.sys.version)
+
 
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'key.json'
     
