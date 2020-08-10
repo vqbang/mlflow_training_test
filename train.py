@@ -26,7 +26,7 @@ logging.info(files)
 
 import platform
 
-print(platform.sys.version)
+logging.info(platform.sys.version)
 
 
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'key.json'
