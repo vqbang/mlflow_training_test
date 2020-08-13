@@ -3,7 +3,8 @@
 # Modeling wine preferences by data mining from physicochemical properties. In Decision Support Systems, Elsevier, 47(4):547-553, 2009.
 
 import os
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'key.json'
+current_dir = os.path.abspath(os.path.dirname(__file__))
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = os.path.join(current_dir, 'key.json')
 
 from google.cloud import storage
 client = storage.Client()
