@@ -6,8 +6,8 @@ import os
 current_dir = os.path.abspath(os.path.dirname(__file__))
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = os.path.join(current_dir, 'key.json')
 
-from google.cloud import storage
-client = storage.Client()
+# from google.cloud import storage
+# client = storage.Client()
 
 import warnings
 import sys
