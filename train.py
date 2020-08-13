@@ -4,6 +4,10 @@
 
 import os
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'key.json'
+
+from google.cloud import storage
+client = storage.Client()
+
 import warnings
 import sys
 import argparse
