@@ -3,6 +3,7 @@
 # Modeling wine preferences by data mining from physicochemical properties. In Decision Support Systems, Elsevier, 47(4):547-553, 2009.
 
 import os
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'key.json'
 import warnings
 import sys
 import argparse
@@ -27,9 +28,6 @@ logging.info(files)
 import platform
 
 logging.info(platform.sys.version)
-
-
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'key.json'
     
 
 def reset_mlflow_env():
@@ -98,7 +96,7 @@ if __name__ == "__main__":
         mlflow.log_metric("r2", r2)
         mlflow.log_metric("mae", mae)
 
-        #mlflow.sklearn.log_model(lr, "model")
+        mlflow.sklearn.log_model(lr, "model")
         
     while (1):
         continue
