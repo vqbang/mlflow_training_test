@@ -7,10 +7,10 @@ import json
 
 #current_dir = os.path.abspath(os.path.dirname(__file__))
 #key_path = os.path.join(current_dir, 'key.json')
-with open("/home/key.json", 'r') as f:
-    key = json.loads(f.read(), strict=False)
-with open("/home/key.json", 'w') as f:
-    json.dump(key, f)
+#with open("/home/key.json", 'r') as f:
+#    key = json.loads(f.read(), strict=False)
+#with open("/home/key.json", 'w') as f:
+#    json.dump(key, f)
 
 # os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = key_path
 
@@ -108,8 +108,7 @@ if __name__ == "__main__":
         mlflow.log_metric("r2", r2)
         mlflow.log_metric("mae", mae)
 
-#        mlflow.sklearn.save_model(lr, "model")
-#        mlflow.sklearn.log_model(lr, "model")
-    while (1):
-        continue
+        mlflow.sklearn.save_model(lr, "model")
+        mlflow.sklearn.log_model(lr, "model")
+
         
