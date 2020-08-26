@@ -1,7 +1,7 @@
 name: mlflow-model
 
 docker_env:
-  image: bangvo/mlflow-base
+  image: tikivn/mlflow:darknet
 
 entry_points:
   main:
