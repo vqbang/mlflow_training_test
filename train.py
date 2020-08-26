@@ -31,7 +31,6 @@ import mlflow
 import mlflow.sklearn
 
 import logging
-from config import *
 
 logging.basicConfig(format='%(asctime)s - %(message)s', level=logging.INFO)
 
