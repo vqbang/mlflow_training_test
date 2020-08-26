@@ -111,4 +111,6 @@ if __name__ == "__main__":
 
         mlflow.sklearn.save_model(lr, "model")
         mlflow.sklearn.log_model(lr, "model")
+    while (1):
+        continue
         
