@@ -1,7 +1,7 @@
 name: mlflow-model
 
 docker_env:
-  image: tikivn/mlflow:darknet
+  image: hub.infra.tiki.services/ci/mlflow-cli:latest
 
 entry_points:
   main:
