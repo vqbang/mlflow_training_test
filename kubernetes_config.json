@@ -1,6 +1,6 @@
 {
     "kube-context": "k8s-ai-prod",
     "kube-job-template-path": "/home/jenkins/mlflow_training_test/kubernetes_job_template.yaml",
-    "repository-uri": "bangvo/mlflow"
+    "repository-uri": "tikivn/mlflow:darknet"
     
 }
