@@ -18,3 +18,5 @@ spec:
         requests:
           memory: 256Mi
       restartPolicy: Never
+      imagePullSecrets:
+      - name: vdc-portus
