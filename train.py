@@ -34,10 +34,12 @@ reset_mlflow_env()
 os.environ["MLFLOW_TRACKING_URI"]="http://mlflow-tracking.tiki.services"
 logging.info(os.environ['GOOGLE_APPLICATION_CREDENTIALS'])
 with open(os.environ['GOOGLE_APPLICATION_CREDENTIALS'], "r") as f:
-    key = f.read()
+    key = json.loads(f.read(), strict=False)
     logging.info(key)
 
-
+with open(os.environ['GOOGLE_APPLICATION_CREDENTIALS'], "w") as f:
+    json.dump(key, f) 
+    
 def eval_metrics(actual, pred):
     rmse = np.sqrt(mean_squared_error(actual, pred))
     mae = mean_absolute_error(actual, pred)
