@@ -1,7 +1,7 @@
 name: mlflow-model
 
 docker_env:
-  image: hub.infra.tiki.services/ci/mlflow-cli:latest
+  image: hub.infra.tiki.services/ci/mlflow-base-image:latest
 
 entry_points:
   main:
