@@ -10,7 +10,7 @@ spec:
     spec:
       containers:
       - name: "mlflow-model"
-        image: "hub.infra.tiki.services/ci/mlflow"
+        image: "asia.gcr.io/tikivn/mlflow"
         command: ["python train.py --alpha {alpha} --l1-ratio {l1_ratio}"]
       resources:
         limits:
