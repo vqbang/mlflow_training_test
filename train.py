@@ -106,4 +106,4 @@ if __name__ == "__main__":
         
         mlflow.sklearn.log_model(lr, "model")
 
-        
+    while(1)    
