@@ -29,7 +29,17 @@ import platform
 
 logging.info(platform.sys.version)
     
+current_dir = os.path.abspath(os.path.dirname(__file__))
+key_path = os.path.join(current_dir, 'key.json')
+with open(key_path, 'r') as f:
+    key = json.loads(f.read(), strict=False)
+    logging.info(key)
+with open(key_path, 'w') as f:
+    json.dump(key, f)
 
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = key_path
+    
+    
 def reset_mlflow_env():
     env_vars = ['MLFLOW_RUN_ID', 'MLFLOW_EXPERIMENT_ID']
     for e in env_vars:
