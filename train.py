@@ -4,6 +4,18 @@
 
 import os
 import json
+import logging
+
+logging.basicConfig(format='%(asctime)s - %(message)s', level=logging.INFO)
+
+
+logging.info(os.environ['GOOGLE_APPLICATION_CREDENTIALS'])
+with open(os.environ['GOOGLE_APPLICATION_CREDENTIALS'], "r") as f:
+    key = json.loads(f.read(), strict=False)
+    logging.info(key)
+
+with open(os.environ['GOOGLE_APPLICATION_CREDENTIALS'], "w") as f:
+    json.dump(key, f) 
 
 import warnings
 import sys
@@ -16,9 +28,6 @@ from sklearn.linear_model import ElasticNet
 import mlflow
 import mlflow.sklearn
 
-import logging
-
-logging.basicConfig(format='%(asctime)s - %(message)s', level=logging.INFO)
     
     
 def reset_mlflow_env():
@@ -30,13 +39,6 @@ def reset_mlflow_env():
 reset_mlflow_env()
 
 os.environ["MLFLOW_TRACKING_URI"]="http://mlflow-tracking.tiki.services"
-logging.info(os.environ['GOOGLE_APPLICATION_CREDENTIALS'])
-with open(os.environ['GOOGLE_APPLICATION_CREDENTIALS'], "r") as f:
-    key = json.loads(f.read(), strict=False)
-    logging.info(key)
-
-with open(os.environ['GOOGLE_APPLICATION_CREDENTIALS'], "w") as f:
-    json.dump(key, f) 
     
 def eval_metrics(actual, pred):
     rmse = np.sqrt(mean_squared_error(actual, pred))
