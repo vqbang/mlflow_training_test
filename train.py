@@ -31,6 +31,11 @@ import mlflow
 import mlflow.sklearn
 
     
+experiment = 'test'
+if not mlflow.get_experiment_by_name(experiment):
+    client = mlflow.tracking.MlflowClient()
+    client.create_experiment(experiment)
+mlflow.set_experiment(experiment)
     
 def reset_mlflow_env():
     env_vars = ['MLFLOW_RUN_ID', 'MLFLOW_EXPERIMENT_ID']
