@@ -8,11 +8,8 @@ import logging
 
 logging.basicConfig(format='%(asctime)s - %(message)s', level=logging.INFO)
 
-
-logging.info(os.environ['GOOGLE_APPLICATION_CREDENTIALS'])
 with open(os.environ['GOOGLE_APPLICATION_CREDENTIALS'], "r") as f:
     key = json.loads(f.read(), strict=False)
-    logging.info(key)
 
 with open(os.environ['GOOGLE_APPLICATION_CREDENTIALS'], "w") as f:
     json.dump(key, f) 
@@ -30,8 +27,7 @@ from sklearn.linear_model import ElasticNet
 import mlflow
 import mlflow.sklearn
 
-    
-experiment = 'test'
+experiment = 'mllow_test'
 if not mlflow.get_experiment_by_name(experiment):
     client = mlflow.tracking.MlflowClient()
     client.create_experiment(experiment)
